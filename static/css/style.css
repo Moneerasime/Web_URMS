@@ -499,6 +499,7 @@ transform:scale(1.05);
     width: 450px;
     margin: 50px auto;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+     color: black;
 }
 
 .account-options {
@@ -606,10 +607,17 @@ transform:scale(1.05);
 
 
 
+/* مثال لتوسيط الصفحة */
+.wrapper {
+    width: 1200px; /* نفس عرض الصفحة */
+   
+}
+
 body {
     background-color: #635BFF;
     color: #fff;
     direction: rtl;
+     margin: 0 auto; /* لتوسيط المحتوى */
 }
 
 /* الرأس */
@@ -624,7 +632,7 @@ header {
     width: 100%; /* يمتد من بداية الصفحة إلى النهاية */
     position: relative; /* للحفاظ على Flex layout */
     top: 5;
-     
+      margin: 0 auto; /* لتوسيط المحتوى */
 }
 
 header .logo {
