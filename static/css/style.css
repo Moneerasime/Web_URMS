@@ -445,6 +445,9 @@ padding:40px;
 display:flex;
 flex-direction:column;
 justify-content:center;
+text-decoration: none;
+    color: #0b0101;
+    text-align:center;
 }
 .login-right h2{
 text-align:center;
@@ -753,10 +756,10 @@ header .login-btn {
 }
 
 /* Responsive */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .hero {
         flex-direction:column;
-text-align:center;
+        text-align:center;
         
     }
 
@@ -764,11 +767,13 @@ text-align:center;
         width:100%;
     } 
     .hero-img {
-        width:100%;
-        margin-top:30px;
-        
+        width:90%;
+        margin-top:20px;   
     }
 
+    .menu{
+        display: none;
+    }
     .hero-text ul li {
         padding-left: 0;
     }
