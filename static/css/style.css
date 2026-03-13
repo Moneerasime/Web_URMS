@@ -236,6 +236,10 @@ padding:40px;
 display:flex;
 flex-direction:column;
 justify-content:center;
+
+  background:rgb(255, 255, 255);
+  border-radius:20px;
+  box-shadow:0 10px 40px rgba(0,0,0,0.2);
 }
 .login-right h2{
 text-align:center;
@@ -295,13 +299,22 @@ font-size:18px;
 transform:scale(1.05);
 }
 
+.register-card1{
+    background-color: #f4f4f6;
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #0b0101;
+    font-weight: bold;
+}
 .register-card{
   max-width:700px;
   margin:50px auto;
   padding:30px;
-  background:white;
+  background:rgb(255, 255, 255);
   border-radius:20px;
   box-shadow:0 10px 40px rgba(0,0,0,0.2);
+  color: #0d0d0d;
 }
 
 .register-card h2{
@@ -644,7 +657,7 @@ header nav a {
     color: #0d0d0d;
     text-decoration: none;
     margin: 0 15px;
-    font-weight: 500;
+    font-weight: 1000;
 }
 
 header nav a.active {
@@ -662,24 +675,21 @@ header .login-btn {
 
 /* القسم الرئيسي */
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 10%;
-    flex-wrap: wrap;
-    
-      
+      display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:60px 8%;
+       
 }
 
 .hero-text {
     max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .hero-text h1 {
-    font-size: 35px;
+    font-size: 55px;
+    margin-bottom:20px;
+    color: #FFB45A;
 }
 
 .hero-text p {
@@ -688,14 +698,11 @@ header .login-btn {
 
 .hero-text ul {
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    
 }
 
 .hero-text ul li {
-    position: relative;
-    padding-left: 25px;
+     margin:8px 0;
 }
 
 .hero-text ul li::before {
@@ -707,8 +714,7 @@ header .login-btn {
 
 /* الأزرار */
 .btn-group {
-    display: flex;
-    gap: 10px;
+    margin-top:15px;
 }
 
 .btn-group a {
@@ -717,21 +723,29 @@ header .login-btn {
     text-decoration: none;
     font-weight: bold;
     text-align: center;
+    
 }
 
 .btn-primary {
-    background-color: #4939FF;
-    color: #fff;
+    background:#4f46e5;
+    color:white;
+    border:none;
+    padding:10px 25px;
+    border-radius:20px
 }
 
 .btn-secondary {
-    background-color: #FFB45A;
-    color: #fff;
+    background:orange;
+    color:white;
+    border:none;
+    padding:10px 25px;
+    border-radius:20px;
+    margin-right:10px;
 }
 
 /* الصورة */
 .hero-img {
-    max-width: 45%;
+ width:50%;
 }
 
 .hero-img img {
@@ -741,12 +755,18 @@ header .login-btn {
 /* Responsive */
 @media (max-width: 992px) {
     .hero {
-        flex-direction: column-reverse;
-        text-align: center;
+        flex-direction:column;
+text-align:center;
+        
     }
 
-    .hero-text, .hero-img {
-        max-width: 100%;
+    .hero-text{
+        width:100%;
+    } 
+    .hero-img {
+        width:100%;
+        margin-top:30px;
+        
     }
 
     .hero-text ul li {

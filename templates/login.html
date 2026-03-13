@@ -30,7 +30,9 @@
 <div class="login-right">
 
 <h2>تسجيل الدخول</h2>
-
+<p>
+مرحبا بك في نظام إدارة الشؤون الجامعية
+</p>
 <form action="{{ url_for('auth.login') }}" method="post">
 
 <input type="email" name="email" placeholder="البريد الإلكتروني" required>
@@ -47,17 +49,13 @@
 نسيت كلمة المرور؟
 </a>
 </div>
-
-<p>
+<div class="register-card1">
+<p >
 ليس لديك حساب؟
 <a href="{{ url_for('auth.select_account_type') }}">إنشاء حساب جديد</a>
 </p>
-
 </div>
-
 </div>
-<div class="links" style="text-align: center; margin-top: 20px;">
-    <a href="{{ previous_page }}">← العودة إلى الصفحة السابقة</a>
 </div>
 <div class="back-home">
         <a href="/">🏠العودة إلى الصفحة الرئيسية </a>
